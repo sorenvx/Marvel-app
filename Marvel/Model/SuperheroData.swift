@@ -10,6 +10,8 @@
 
 import Foundation
 
+// el modelo de la API de Marvel para poder traer los siguientes datos
+
 // MARK: - Welcome
 struct MarvelAPI: Codable {
     let code: Int?

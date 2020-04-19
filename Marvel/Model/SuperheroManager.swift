@@ -35,6 +35,8 @@ struct SuperheroManager {
     let limit = "20"
     
     
+    // función para poder traer la lista de personajes
+    
     func getSuperheroes(completion: @escaping ServiceCompletion) -> Void {
         let urlString = "https://gateway.marvel.com:443/v1/public/characters?limit=\(limit)&offset=\(offset)&ts=\(ts)&apikey=\(publicKey)&hash=\(md5Hash)"
         print(urlString)

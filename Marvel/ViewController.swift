@@ -45,6 +45,8 @@ class ViewController: UIViewController {
 
 }
 
+// funciones de la lista de personajes
+
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return superhero.count
@@ -74,6 +76,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         performSegue(withIdentifier: "segueDetail", sender: indexPath)
     }
 }
+
+// funcion para pasar los los datos de la fila a la pantalla de detalle
 
 extension ViewController {
 

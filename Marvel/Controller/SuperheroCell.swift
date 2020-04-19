@@ -28,12 +28,8 @@ class SuperheroCell: UITableViewCell {
         nameLabel.text = nil
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
     
+    // función que muestra la imagen
     func downloadImage(url: URL) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if error != nil {
